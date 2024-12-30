@@ -190,6 +190,9 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Copy some of vscode's keybindings
+-- vim.keymap.set('n', '<C-_>', 'gcc', { desc = 'Comment/Uncomment' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -793,6 +796,10 @@ require('lazy').setup({
         return '%2l:%-2v'
       end
 
+      -- require('mini.starter').setup()
+
+      -- require('mini.tabline').setup()
+
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
@@ -825,7 +832,6 @@ require('lazy').setup({
 
   {
     'saghen/blink.cmp',
-    -- optional: provides snippets for the snippet source
     dependencies = 'rafamadriz/friendly-snippets',
 
     version = '*',
@@ -837,13 +843,14 @@ require('lazy').setup({
       -- 'super-tab' for mappings similar to vscode (tab to accept, arrow keys to navigate)
       -- 'enter' for mappings similar to 'super-tab' but with 'enter' to accept
       -- See the full "keymap" documentation for information on defining your own keymap.
+      -- https://cmp.saghen.dev/configuration/keymap.html#default
       keymap = { preset = 'default' },
 
       appearance = {
         -- Sets the fallback highlight groups to nvim-cmp's highlight groups
         -- Useful for when your theme doesn't support blink.cmp
         -- Will be removed in a future release
-        use_nvim_cmp_as_default = true,
+        -- use_nvim_cmp_as_default = true,
         -- Set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
         -- Adjusts spacing to ensure icons are aligned
         nerd_font_variant = 'mono',
