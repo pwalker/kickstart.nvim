@@ -731,6 +731,9 @@ require('lazy').setup({
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
+        typescript = { 'prettierd', 'prettier', stop_after_first = true },
+        typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
+        markdown = { 'prettier' },
       },
     },
   },
@@ -851,6 +854,13 @@ require('lazy').setup({
       sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
       },
+
+      signature = {
+        enabled = true,
+        window = {
+          border = 'single',
+        },
+      },
     },
     opts_extend = { 'sources.default' },
   },
@@ -881,7 +891,7 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
