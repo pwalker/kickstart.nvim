@@ -205,6 +205,11 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- Define a keymap to open Neogit in a floating window
+vim.keymap.set('n', '<leader>gg', function()
+  require('neogit').open { kind = 'floating' } -- Use "split" for a split window, "tab" for a new tab, or "floating" for a floating window
+end, { desc = '[G]it [G]ui (Neogit)' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
