@@ -770,6 +770,7 @@ require('lazy').setup({
         typescriptreact = { 'prettier', stop_after_first = true },
         markdown = { 'prettier' },
         json = { 'prettier' },
+        astro = { 'prettier' },
       },
     },
   },
