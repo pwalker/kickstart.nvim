@@ -11,7 +11,7 @@
       "version": "1.0.0 - 2.0.0"
     },
     "catppuccin": {
-      "rev": "e068ab5f8261f23f6f71ffd8791ae40315b77b9c",
+      "rev": "79e2049a0fdf7ec840f8463fe1d962c94493196b",
       "src": "https://github.com/catppuccin/nvim"
     },
     "conform.nvim": {
@@ -19,7 +19,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "conjure": {
-      "rev": "16b436c0124dae26250986fd4e660529d6bb14f0",
+      "rev": "b7ff6c52b84a555cb57ea0d37b005473d4726a81",
       "src": "https://github.com/Olical/conjure"
     },
     "diffview.nvim": {
@@ -31,7 +31,7 @@
       "src": "https://github.com/j-hui/fidget.nvim"
     },
     "gitsigns.nvim": {
-      "rev": "2038c666bd9d8a0b7349a0b6ee00dc83104b9ecf",
+      "rev": "31d6fb2d618bca1482b9f274751ead5f03461408",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "guess-indent.nvim": {
@@ -43,7 +43,7 @@
       "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "21c5b3ebeaa0412e28096bb0701434c51c1fbf76",
+      "rev": "7adc933dabcc7c86ae6b07aff7ee68eac398491f",
       "src": "https://github.com/mason-org/mason-lspconfig.nvim"
     },
     "mason-tool-installer.nvim": {
@@ -55,7 +55,7 @@
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.nvim": {
-      "rev": "c248713d3530710f67ec804cfbdfcd5b02b19dee",
+      "rev": "946ae64e0ee807ae3c41f382f0114b4ed4915b2c",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neo-tree.nvim": {
@@ -73,20 +73,20 @@
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim-lint": {
-      "rev": "01c9842c089069ab497430159312b2c8868a4590",
+      "rev": "a219b2c9e5b4765e5c845aba119dad55806fcaf1",
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
-      "rev": "3371bf298c1f56efc26771ee961f461176958fb5",
+      "rev": "b7b920947f21339ee41fbb38c79d6445e12900aa",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
-      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "rev": "61df84986b4b4ec469ee745a182e433d49f8c27e",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
     "nvim-web-devicons": {
-      "rev": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c",
+      "rev": "2ae6958df7ced50baac5035cec0c15799eedfbf7",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "plenary.nvim": {
