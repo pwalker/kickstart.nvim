@@ -416,7 +416,28 @@ do
   -- vim.cmd.colorscheme 'tokyonight-night'
 
   vim.pack.add { { src = 'https://github.com/catppuccin/nvim', name = 'catppuccin' } }
-  vim.cmd.colorscheme 'catppuccin-nvim'
+  -- vim.cmd.colorscheme 'catppuccin-nvim'
+
+  vim.pack.add { { src = 'https://codeberg.org/evergarden/nvim.git', name = 'evergarden' } }
+  require('evergarden').setup {
+    theme = {
+      variant = 'fall', -- 'winter'|'fall'|'spring'|'summer'
+      -- accent = 'green',
+    },
+    editor = {
+      cursor = {},
+      transparent_background = false,
+      sign = { color = 'none' },
+      float = {
+        color = 'mantle',
+        solid_border = false,
+      },
+      completion = {
+        color = 'surface0',
+      },
+    },
+  }
+  vim.cmd.colorscheme 'evergarden'
 
   -- Highlight todo, notes, etc in comments
   vim.pack.add { gh 'folke/todo-comments.nvim' }
@@ -447,6 +468,8 @@ do
   -- - sd'   - [S]urround [D]elete [']quotes
   -- - sr)'  - [S]urround [R]eplace [)] [']
   require('mini.surround').setup()
+
+  require('mini.tabline').setup()
 
   -- Simple and easy statusline.
   --  You could remove this setup call if you don't like it,
@@ -935,7 +958,7 @@ do
   vim.pack.add { { src = gh 'nvim-treesitter/nvim-treesitter', version = 'main' } }
 
   -- Ensure basic parsers are installed
-  local parsers = { 'bash', 'c', 'diff', 'html', 'json', 'jsonc', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' }
+  local parsers = { 'bash', 'c', 'diff', 'html', 'json', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' }
   require('nvim-treesitter').install(parsers)
 
   ---@param buf integer

@@ -26,6 +26,10 @@
       "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
       "src": "https://github.com/sindrets/diffview.nvim"
     },
+    "evergarden": {
+      "rev": "c8e5e7e67a36694e5d917b7065b26b59b8cb489f",
+      "src": "https://codeberg.org/evergarden/nvim.git"
+    },
     "fidget.nvim": {
       "rev": "6f793b2bcd2d35e201c09520f698bb763220908a",
       "src": "https://github.com/j-hui/fidget.nvim"
